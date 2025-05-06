@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondar-text-color: #577592;
+    --padding-inline-section: 20px;
+    --acent-color: blue;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--primary-text-color);
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+    color: val(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+ul{
+    list-style: none;
+}
+
+/* utility classes */
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    max-width: 1500px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover {
+    color: blue;
+    transition: 0.2s;
+}
+
+.primary-button {
+    background-color: var(--acent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0px 5px 5px var(--secondar-text-color);
+}
+
+.primary-button:hover {
+    background-color: rgb(37, 31, 31)
+}
+
+.secondary-button {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    border: 2px solid black;
+}
+/* first top navbat */
+
+.top-banner{
+    background-image: url(background.webp);
+    background-size: 900px;
+    background-color: black;
+}
+.banner-text{
+     color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* main navbar */
+
+.main-nav {
+ justify-content: space-between;
+ margin-top: 20px;
+}
+
+.company-logo{
+ font-size: 35px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+
+}
+
+.nav-links ul {
+    justify-content: space-between;
+    gap: 13px;
+}
+
+/* header section */
+
+header {
+  padding: 50px var(--padding-inline-section);
+}
+/* .header-section {
+    justify-content: center;
+    gap: 50px;
+} */
+
+.header-right img {
+    width: 800px;
+}
+
+/* conpanys-section */
+
+.companies-header {
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+    font-size: 20px;
+}
+
+.logos {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 76px;
+}
+
+/* feature-section */
+
+.feature-section {
+    padding: 80px var(--padding-inline-section) 0;
+}
+
+.feature-header {
+    text-align: center;
+}
+
+.feature-heading-text {
+    margin-bottom: 29px;
+}
+
+/*  featuer-section */
+
+.feature-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 30px ;
+}
+
+.feature-card {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    align-items: center;
+}
+.imgage1 {
+    width: 99px;
+}
+
+/*  Big-feature-section */
+
+.big-feature-section {
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.big-feature-container {
+    gap: 20%;
+}
+
+.feature-img img {
+ width: 140%;
+}
+
+.feature-desc {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* example-section */
+
+.example-area {
+ justify-content: space-between;
+ margin-block: 30px;
+}
+
+.example-card {
+   width: 18%;
+   position: relative;
+   min-height: 300px;
+   background: black;
+   background-image: url(background.jpg);
+   border: 2px solid black;
+   border-radius: 27px ;
+}
+
+.example-card:hover{
+    box-shadow: 0 0 10px;
+}
+
+
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: rgb(55, 53, 53);
+}
